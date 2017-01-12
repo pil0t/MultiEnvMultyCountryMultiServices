@@ -13,7 +13,7 @@ namespace EndUserSite.Controllers
 
 		public ActionResult Index()
 		{
-			//FromB and A2
+			//FromB and A2e
 			Logger.Info("Open index in Home controller");
 			return View();
 		}
