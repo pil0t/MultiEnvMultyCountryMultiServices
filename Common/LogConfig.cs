@@ -39,8 +39,12 @@ namespace Common
 
 			// Step 3. Set target properties 
 			consoleTarget.Layout = @"${date:format=HH\:mm\:ss} ${logger} ${message}";
-		    var an = GetMyEntryAssembly().GetName().Name;
-		    var env = ConfigurationManager.AppSettings["Environment"] ?? "UNKNOWNENV";
+		    var entryAssembly = GetMyEntryAssembly();
+
+		    var an = entryAssembly == null
+			    ? (ConfigurationManager.AppSettings["Application"] ?? "UNKONWNAPP")
+			    : entryAssembly.GetName().Name; 
+			var env = ConfigurationManager.AppSettings["Environment"] ?? "UNKNOWNENV";
 			fileTarget.FileName = "${basedir}/" + an +"." + env + ".log";
 			fileTarget.Layout = "${message}";
 			
