@@ -13,7 +13,7 @@ namespace EndUserSite.Controllers
 
 		public ActionResult Index()
 		{
-			//Alala Stable Stable2
+			//Alala Stable Stable2s
 			//FromB
 			Logger.Info("Open index in Home controller");
 			return View();
