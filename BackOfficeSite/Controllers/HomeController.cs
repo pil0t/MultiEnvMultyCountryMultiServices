@@ -13,6 +13,7 @@ namespace BackOfficeSite.Controllers
 
 		public ActionResult Index()
 		{
+			//Team A Specific
 			Logger.Info("Open index in Home controller");
 			return View();
 		}
