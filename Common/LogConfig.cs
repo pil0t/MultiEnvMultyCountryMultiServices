@@ -19,7 +19,7 @@ namespace Common
 				return Assembly.GetEntryAssembly(); // Not a web application
 			var type = System.Web.HttpContext.Current.ApplicationInstance.GetType();
 			while (type != null && type.Namespace == "ASP")
-			{
+			{  
 				type = type.BaseType;
 			}
 
