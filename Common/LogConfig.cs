@@ -13,7 +13,7 @@ namespace Common
 {
     public class LogConfig	
     {
-		private static Assembly GetMyEntryAssembly()
+		private static Assembly GetMyEntryAssembly() // FROM TEAM B
 		{
 			if ((System.Web.HttpContext.Current == null))
 				return Assembly.GetEntryAssembly(); // Not a web application
