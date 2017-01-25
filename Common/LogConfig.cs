@@ -26,7 +26,7 @@ namespace Common
 			return type == null ? null : type.Assembly;
 		}
 
-		public static void Perform()
+		public static void Perform() // FROM TEAM A
 	    {
 			var config = new LoggingConfiguration();
 
