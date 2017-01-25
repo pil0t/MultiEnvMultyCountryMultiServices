@@ -21,7 +21,7 @@ namespace Common
 			while (type != null && type.Namespace == "ASP")
 			{  
 				type = type.BaseType;
-			}//asdasdasd
+			}//asdasdasdsaasd
 
 			return type == null ? null : type.Assembly;
 		}
