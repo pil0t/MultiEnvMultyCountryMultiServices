@@ -41,10 +41,14 @@ namespace Common
 			consoleTarget.Layout = @"${date:format=HH\:mm\:ss} ${logger} ${message}";
 		    var entryAssembly = GetMyEntryAssembly();
 
+			
+
 		    var an = entryAssembly == null
 			    ? (ConfigurationManager.AppSettings["Application"] ?? "UNKONWNAPP")
 			    : entryAssembly.GetName().Name; 
 			var env = ConfigurationManager.AppSettings["Environment"] ?? "UNKNOWNENV";
+
+		    var dbName = env + " an";
 			fileTarget.FileName = "${basedir}/" + an +"." + env + ".log";
 			fileTarget.Layout = "${message}";
 			
