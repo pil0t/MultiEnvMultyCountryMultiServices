@@ -11,7 +11,7 @@ namespace EndUserSite
 {
     public class MvcApplication : System.Web.HttpApplication
     {
-        protected void Application_Start()
+        protected void Application_Start()   
         {
 			LogConfig.Perform();
             AreaRegistration.RegisterAllAreas();
