@@ -8,7 +8,7 @@ using System.Text;
 
 namespace ExternalCommunicationsService
 {
-	// NOTE: You can use the "Rename" command o2n the "Refactor" menu to change the interface name "IExternalCommunicationsService" in both code and config file together.
+	// NOTE: You can use the "Rename" command o2n the "Rewfactor" menu to change the interface name "IExternalCommunicationsService" in both code and config file together.
 	[ServiceContract]
 	public interface IExternalCommunicationsService
 	{
